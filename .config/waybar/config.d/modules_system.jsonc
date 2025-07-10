@@ -1,0 +1,29 @@
+{
+  "group/system-info": {
+    "drawer": {
+      "click-to-reveal": true,
+      "transition-left-to-right": false,
+    },
+    "orientation": "horizontal",
+    "modules": ["custom/system-icon", "cpu", "temperature", "memory", "disk"],
+  },
+  "custom/system-icon": {
+    "format": "",
+    "tooltip": false,
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": " {temperatureC}°C",
+    "format-critical": " {temperatureC}°C",
+  },
+  "cpu": {
+    "interval": 1,
+    "format": " {}%",
+  },
+  "disk": {
+    "format": " {used}/{total}",
+  },
+  "memory": {
+    "format": " {used:0.1f}G/{total:0.1f}G",
+  },
+}

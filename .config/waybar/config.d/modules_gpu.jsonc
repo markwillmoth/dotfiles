@@ -1,0 +1,41 @@
+{
+  "group/gpu": {
+    "drawer": {
+      "click-to-reveal": true,
+      "transition-left-to-right": false,
+    },
+    "orientation": "horizontal",
+    "modules": [
+      "custom/gpu_icon",
+      "custom/gpu_utilization",
+      "custom/gpu_temperature",
+      "custom/gpu_memory",
+    ],
+  },
+  "custom/gpu_icon": {
+    "format": "",
+    "tooltip": false,
+  },
+
+  "custom/gpu_utilization": {
+    "format": " {}%",
+    "exec": "~/.config/waybar/scripts/gpu_utilization.sh",
+    "interval": 5,
+    "return-type": "text",
+    "tooltip": false,
+  },
+  "custom/gpu_temperature": {
+    "format": " {}°C",
+    "exec": "~/.config/waybar/scripts/gpu_temperature.sh",
+    "interval": 5,
+    "return-type": "text",
+    "tooltip": false,
+  },
+  "custom/gpu_memory": {
+    "format": " {}",
+    "exec": "~/.config/waybar/scripts/gpu_memory.sh",
+    "interval": 5,
+    "return-type": "text",
+    "tooltip": false,
+  },
+}

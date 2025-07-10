@@ -1,0 +1,12 @@
+#compdef hyprcmd
+
+_hyprcmd() {
+  local -a completions
+  local -a args
+
+  # Insert 'complete' after the command name
+  args=("${words[1]}" "complete" "${words[@]}")
+
+  completions=("${(@f)$( "${args[@]}" )}")
+  _describe 'values' completions
+}

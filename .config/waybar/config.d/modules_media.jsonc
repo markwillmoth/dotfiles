@@ -1,0 +1,46 @@
+{
+  "group/media": {
+    "orientation": "horizontal",
+    "modules": [
+      "mpris#control",
+      "mpris#player",
+      "mpris#details",
+      "mpris#position",
+    ],
+  },
+  "mpris#control": {
+    "format": "{player_icon}",
+    "tooltip": false,
+    "format-paused": "{status_icon}",
+    "player-icons": {
+      "default": "▶",
+    },
+    "status-icons": {
+      "paused": "⏸",
+    },
+    "dynamic-order": ["artist", "title", "position", "length"],
+    "refresh": 1,
+  },
+  "mpris#player": {
+    "format": "{player_icon}",
+    "player-icons": {
+      "default": "",
+      "brave": "",
+      "spotify": "",
+    },
+    "refresh": 1,
+  },
+  "mpris#details": {
+    "format": "{dynamic}",
+    "dynamic-order": ["artist", "album", "title"],
+    "tooltip": false,
+    "title-len": 40,
+    "dynamic-separator": " • ",
+  },
+  "mpris#position": {
+    "format": "{position} / {length}",
+    "tooltip": false,
+    "format-paused": "{position} / {length}",
+    "interval": 1,
+  },
+}

@@ -1,0 +1,155 @@
+// === Variables ===
+$font-family: "Roboto Mono", "Font Awesome 6 Free", sans-serif;
+$font-size: 14px;
+
+$padding-top: 8px;
+$padding-side: 16px;
+$module-gap: 12px;
+$drawer-gap: 16px;
+$module-radius: 8px;
+
+$opacity: 0.7;
+
+$module-bg: rgba(0, 0, 0, $opacity);
+$bar-bg: rgba(0, 0, 0, 0);
+
+$green-bg: rgba(80, 255, 80, $opacity);
+$red-bg: rgba(255, 80, 80, $opacity);
+
+// === Global styles ===
+* {
+    font-family: $font-family;
+    font-size: $font-size;
+}
+
+window {
+    > box {
+        padding-top: $padding-top;
+        padding-left: $padding-side;
+        padding-right: $padding-side;
+
+        > box {
+            > widget {
+                > .module,
+                > box {
+                    border-radius: $module-radius;
+                    color: rgb(255, 255, 255);
+                    padding: 0 $padding-side;
+                    background: $module-bg;
+                }
+            }
+        }
+    }
+
+    &#waybar {
+        background: transparent;
+    }
+
+    .modules-left {
+        > widget {
+            > .module,
+            > box {
+                margin-right: $module-gap;
+            }
+        }
+
+        .drawer-child {
+            .module {
+                margin-left: $drawer-gap;
+            }
+        }
+    }
+
+    .modules-right {
+        > widget {
+            > .module,
+            > box {
+                margin-left: $module-gap;
+            }
+        }
+
+        .drawer-child {
+            .module {
+                margin-right: $drawer-gap;
+            }
+        }
+    }
+}
+
+#tray {
+    image {
+        padding: 0 6px;
+    }
+}
+
+// === Media modules ===
+#media {
+    padding: 0;
+    background: transparent;
+
+    .module {
+        background: $module-bg;
+
+        &.control {
+            min-width: 40px;
+            padding-left: 4px;
+            border-top-left-radius: $module-radius;
+            border-bottom-left-radius: $module-radius;
+            margin-right: 0;
+
+            &.playing {
+                background: $green-bg;
+            }
+
+            &.paused {
+                background: $red-bg;
+            }
+        }
+
+        &.player,
+        &.details {
+            padding-left: $padding-side;
+            margin-right: 0;
+        }
+
+        &.details {
+            padding-right: $padding-side;
+        }
+
+        &.position {
+            border-top-right-radius: $module-radius;
+            border-bottom-right-radius: $module-radius;
+            padding-right: $padding-side;
+        }
+    }
+}
+
+// === Workspaces ===
+#workspaces {
+    button {
+        padding: 0 5px;
+        background-color: transparent;
+        color: white;
+
+        &.empty {
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+        }
+
+        &.active {
+            color: #7cc2f7;
+        }
+
+        &.focused {
+            background-color: #64727d;
+        }
+
+        &.urgent {
+            color: #eb4d4b;
+        }
+    }
+}

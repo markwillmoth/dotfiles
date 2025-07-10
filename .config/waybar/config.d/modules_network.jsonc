@@ -1,0 +1,36 @@
+{
+  "group/network-info": {
+    "drawer": {
+      "click-to-reveal": true,
+      "transition-left-to-right": false,
+    },
+    "orientation": "horizontal",
+    "modules": [
+      "custom/network-icon",
+      "network#eth",
+      "network#wifi",
+      "custom/wan_ip",
+    ],
+  },
+  "custom/network-icon": {
+    "format": "",
+    "tooltip": false,
+  },
+  "network#eth": {
+    "interface": "enp4s0",
+    "format-ethernet": " {ifname} {ipaddr}/{cidr}",
+    "format-alt": " {ifname} {ipaddr}/{cidr}  {bandwidthDownBytes}  {bandwidthUpBytes}",
+    "interval": 1,
+  },
+  "network#wifi": {
+    "interface": "wlan0",
+    "format-wifi": " {essid} ({signalStrength}%) {ipaddr}/{cidr}",
+    "format-disconnected": " {ifname}",
+  },
+  "custom/wan_ip": {
+    "format": " {}",
+    "exec": "~/.config/waybar/scripts/wan_ip.sh",
+    "interval": 60,
+    "tooltip": false,
+  },
+}

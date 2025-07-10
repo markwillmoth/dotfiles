@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<actions>
+<action>
+	<icon>kitty</icon>
+	<name>Open Terminal Here</name>
+	<submenu />
+	<unique-id>1747530185908147-1</unique-id>
+	<command>kitty --working-directory %f</command>
+	<description />
+	<range />
+	<patterns>*</patterns>
+	<directories />
+</action>
+<action>
+	<icon>zed</icon>
+	<name>Open in Zed</name>
+	<submenu />
+	<unique-id>1747769210888369-1</unique-id>
+	<command>/home/markcw/.local/bin/zed %f</command>
+	<description />
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories />
+</action>
+</actions>

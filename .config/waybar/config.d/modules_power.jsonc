@@ -1,0 +1,40 @@
+{
+  "group/power-menu": {
+    "drawer": {
+      "click-to-reveal": true,
+      "transition-left-to-right": false,
+    },
+    "orientation": "horizontal",
+    "modules": [
+      "custom/power-menu-icon",
+      "custom/power-lock",
+      "custom/power-logout",
+      "custom/power-suspend",
+      "custom/power-reboot",
+      "custom/power-shutdown",
+    ],
+  },
+  "custom/power-menu-icon": {
+    "format": "",
+  },
+  "custom/power-lock": {
+    "format": "",
+    "on-click": "playerctl pause; hyprlock",
+  },
+  "custom/power-logout": {
+    "format": "",
+    "on-click": "hyprctl dispatch exit",
+  },
+  "custom/power-suspend": {
+    "format": "",
+    "on-click": "systemctl suspend",
+  },
+  "custom/power-reboot": {
+    "format": "",
+    "on-click": "systemctl reboot",
+  },
+  "custom/power-shutdown": {
+    "format": "",
+    "on-click": "systemctl poweroff",
+  },
+}

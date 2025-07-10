@@ -1,0 +1,10 @@
+{
+  "custom/updates": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/update_get_count.sh",
+    "interval": 1800,
+    "return-type": "text",
+    "on-click": "~/.config/waybar/scripts/update_launch_terminal.sh",
+    "tooltip": false,
+  },
+}

@@ -1,0 +1,20 @@
+{
+  "include": [
+    "~/.config/waybar/config.d/modules_audio.jsonc",
+    "~/.config/waybar/config.d/modules_cava.jsonc",
+    "~/.config/waybar/config.d/modules_idle_inhibitor.jsonc",
+    "~/.config/waybar/config.d/modules_media.jsonc",
+    "~/.config/waybar/config.d/modules_gpu.jsonc",
+    "~/.config/waybar/config.d/modules_mitmweb.jsonc",
+    "~/.config/waybar/config.d/modules_network.jsonc",
+    "~/.config/waybar/config.d/modules_power.jsonc",
+    "~/.config/waybar/config.d/modules_privacy.jsonc",
+    "~/.config/waybar/config.d/modules_system.jsonc",
+    "~/.config/waybar/config.d/modules_taskbar.jsonc",
+    "~/.config/waybar/config.d/modules_time.jsonc",
+    "~/.config/waybar/config.d/modules_tray.jsonc",
+    "~/.config/waybar/config.d/modules_updates.jsonc",
+    "~/.config/waybar/config.d/modules_weather.jsonc",
+    "~/.config/waybar/config.d/modules_workspaces.jsonc",
+  ],
+}

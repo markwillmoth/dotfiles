@@ -1,0 +1,27 @@
+{
+  "group/clocks": {
+    "drawer": {
+      "click-to-reveal": true,
+      "transition-left-to-right": false,
+    },
+    "orientation": "horizontal",
+    "modules": ["clock#local", "custom/unix_time", "clock#utc"],
+  },
+  "clock#local": {
+    "format": " {:%d %B %Y %H:%M}",
+    "tooltip": false,
+    "interval": 1,
+  },
+  "clock#utc": {
+    "timezone": "UTC",
+    "format": "{:%H:%M:%S} <span><small>UTC</small></span>",
+    "interval": 1,
+    "tooltip": false,
+  },
+  "custom/unix_time": {
+    "format": "{} <span><small>UNIX</small></span>",
+    "exec": "~/.config/waybar/scripts/unix_time.sh",
+    "interval": 1,
+    "tooltip": false,
+  },
+}

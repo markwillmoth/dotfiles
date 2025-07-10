@@ -1,0 +1,9 @@
+{
+  "custom/mitmweb": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/mitmweb_status.sh",
+    "on-click": "~/.config/waybar/scripts/mitmweb_exec.sh",
+    "interval": 1,
+    "tooltip": false,
+  },
+}

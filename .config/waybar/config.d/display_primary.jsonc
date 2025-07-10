@@ -1,0 +1,21 @@
+{
+  "layer": "bottom",
+  "modules-left": ["wlr/taskbar", "group/media", "cava"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": [
+    "custom/weather",
+    "custom/mitmweb",
+    "idle_inhibitor",
+    "group/clocks",
+    "group/network-info",
+    "group/gpu",
+    "group/system-info",
+    "custom/updates",
+    "systemd-failed-units",
+    "tray",
+    "privacy",
+    "pulseaudio",
+    "group/power-menu",
+  ],
+  "include": ["~/.config/waybar/config.d/modules.jsonc"],
+}

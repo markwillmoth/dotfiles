@@ -1,0 +1,9 @@
+{
+  "custom/weather": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/weather.sh",
+    "interval": 3600,
+    "return-type": "text",
+    "tooltip": false,
+  },
+}

@@ -1,0 +1,7 @@
+{
+  "layer": "bottom",
+  "modules-left": ["wlr/taskbar"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": [],
+  "include": ["~/.config/waybar/config.d/modules.jsonc"],
+}

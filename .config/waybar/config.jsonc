@@ -1,0 +1,11 @@
+[
+  {
+    "output": "DP-1",
+    "include": ["~/.config/waybar/config.d/display_primary.jsonc"],
+    "reload_style_on_change": true,
+  },
+  {
+    "output": ["DP-2", "HDMI-A-1"],
+    "include": ["~/.config/waybar/config.d/display_secondary.jsonc"],
+  },
+]
