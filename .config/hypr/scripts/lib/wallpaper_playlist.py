@@ -18,7 +18,7 @@ def get_current_playlist() -> WallpaperPlaylist | None:
     if key == "all":
         return None
 
-    for playlist in get_all_playlists():
+    for playlist in get_all_playlists(include_hidden=True):
         if playlist.key == key:
             return playlist
 
