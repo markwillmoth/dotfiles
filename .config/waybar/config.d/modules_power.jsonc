@@ -19,22 +19,22 @@
   },
   "custom/power-lock": {
     "format": "",
-    "on-click": "playerctl pause; hyprlock",
+    "on-click": "~/.config/waybar/scripts/power_lock.sh",
   },
   "custom/power-logout": {
     "format": "",
-    "on-click": "hyprctl dispatch exit",
+    "on-click": "~/.config/waybar/scripts/power_logout.sh",
   },
   "custom/power-suspend": {
     "format": "",
-    "on-click": "systemctl suspend",
+    "on-click": "~/.config/waybar/scripts/power_suspend.sh",
   },
   "custom/power-reboot": {
     "format": "",
-    "on-click": "systemctl reboot",
+    "on-click": "~/.config/waybar/scripts/power_reboot.sh",
   },
   "custom/power-shutdown": {
     "format": "",
-    "on-click": "systemctl poweroff",
+    "on-click": "~/.config/waybar/scripts/power_shutdown.sh",
   },
 }
