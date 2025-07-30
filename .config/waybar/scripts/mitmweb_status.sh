@@ -3,5 +3,5 @@
 if pgrep -x "mitmweb" > /dev/null; then
     echo ""
 else
-    echo ""
+    echo ""
 fi

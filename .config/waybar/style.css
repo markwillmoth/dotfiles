@@ -1,75 +1,99 @@
 * {
-  font-family: "Roboto Mono", "Font Awesome 6 Free", sans-serif;
-  font-size: 14px; }
+    font-family: "Roboto Mono", "Symbols Nerd Font", sans-serif;
+    font-size: 14px;
+}
 
 window > box {
-  padding-top: 8px;
-  padding-left: 16px;
-  padding-right: 16px; }
-  window > box > box > widget > .module,
-  window > box > box > widget > box {
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+window > box > box > widget > .module,
+window > box > box > widget > box {
     border-radius: 8px;
     color: white;
     padding: 0 16px;
-    background: rgba(0, 0, 0, 0.7); }
+    background: rgba(0, 0, 0, 0.7);
+}
 
 window#waybar {
-  background: transparent; }
+    background: transparent;
+}
 
 window .modules-left > widget > .module,
 window .modules-left > widget > box {
-  margin-right: 12px; }
+    margin-right: 12px;
+}
 
 window .modules-left .drawer-child .module {
-  margin-left: 16px; }
+    margin-left: 16px;
+}
 
 window .modules-right > widget > .module,
 window .modules-right > widget > box {
-  margin-left: 12px; }
+    margin-left: 12px;
+}
 
 window .modules-right .drawer-child .module {
-  margin-right: 16px; }
+    margin-right: 16px;
+}
 
 #tray image {
-  padding: 0 6px; }
+    padding: 0 6px;
+}
 
 #media {
-  padding: 0;
-  background: transparent; }
-  #media .module {
-    background: rgba(0, 0, 0, 0.7); }
-    #media .module.control {
-      min-width: 40px;
-      padding-left: 4px;
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
-      margin-right: 0; }
-      #media .module.control.playing {
-        background: rgba(80, 255, 80, 0.7); }
-      #media .module.control.paused {
-        background: rgba(255, 80, 80, 0.7); }
-    #media .module.player, #media .module.details {
-      padding-left: 16px;
-      margin-right: 0; }
-    #media .module.details {
-      padding-right: 16px; }
-    #media .module.position {
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
-      padding-right: 16px; }
+    padding: 0;
+    background: transparent;
+}
+#media .module {
+    background: rgba(0, 0, 0, 0.7);
+}
+#media .module.control {
+    min-width: 40px;
+    padding-left: 4px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-right: 0;
+}
+#media .module.control.playing {
+    background: rgba(80, 255, 80, 0.7);
+}
+#media .module.control.paused {
+    background: rgba(255, 80, 80, 0.7);
+}
+#media .module.player,
+#media .module.details {
+    padding-left: 16px;
+    margin-right: 0;
+}
+#media .module.details {
+    padding-right: 16px;
+}
+#media .module.position {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-right: 16px;
+}
 
 #workspaces button {
-  padding: 0 5px;
-  background-color: transparent;
-  color: white; }
-  #workspaces button.empty {
-    color: rgba(255, 255, 255, 0.25); }
-  #workspaces button:hover {
+    padding: 0 5px;
+    background-color: transparent;
+    color: white;
+}
+#workspaces button.empty {
+    color: rgba(255, 255, 255, 0.25);
+}
+#workspaces button:hover {
     background: rgba(255, 255, 255, 0.15);
-    border-radius: 8px; }
-  #workspaces button.active {
-    color: #7cc2f7; }
-  #workspaces button.focused {
-    background-color: #64727d; }
-  #workspaces button.urgent {
-    color: #eb4d4b; }
+    border-radius: 8px;
+}
+#workspaces button.active {
+    color: #7cc2f7;
+}
+#workspaces button.focused {
+    background-color: #64727d;
+}
+#workspaces button.urgent {
+    color: #eb4d4b;
+}

@@ -13,7 +13,7 @@
     ],
   },
   "custom/gpu_icon": {
-    "format": "",
+    "format": "󰍹",
     "tooltip": false,
   },
 
@@ -32,7 +32,7 @@
     "tooltip": false,
   },
   "custom/gpu_memory": {
-    "format": " {}",
+    "format": " {}",
     "exec": "~/.config/waybar/scripts/gpu_memory.sh",
     "interval": 5,
     "return-type": "text",

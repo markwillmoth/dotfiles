@@ -13,12 +13,12 @@
     ],
   },
   "custom/network-icon": {
-    "format": "",
+    "format": "",
     "tooltip": false,
   },
   "network#eth": {
     "interface": "enp4s0",
-    "format-ethernet": " {ifname} {ipaddr}/{cidr}",
+    "format-ethernet": " {ifname} {ipaddr}/{cidr}",
     "format-alt": " {ifname} {ipaddr}/{cidr}  {bandwidthDownBytes}  {bandwidthUpBytes}",
     "interval": 1,
   },
